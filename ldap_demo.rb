@@ -1,4 +1,5 @@
 require "net/ldap"
+require "byebug"
 
 HOST = "ldap.umich.edu"
 USERNAME = ENV.fetch("LDAP_USERNAME")
