@@ -1,4 +1,20 @@
-# ruby-docker-boilerplate
-Boilerplate code for starting a ruby project with docker / docker-compose
+# MCommunity LDAP Demo
 
-Goes with this documentation: https://mlit.atlassian.net/wiki/spaces/LD/pages/2404090314/Getting+Started+with+Docker+and+Docker-Compose 
+A demo of MCommunity LDAP in ruby
+
+## Requirements
+* docker
+* docker compose
+
+## Instructions
+
+1. Run the setup script
+```
+./init.sh
+```
+2. Update the `.env` file with the appropriate values. This is optional since several of the examples don't require authentication.
+3. Uncomment an appropriate line in `ldap_demo.rb`. For example, the line with `ldap_search(one_user("ststv"))` can be uncommented. 
+4. Run the script in the terminal
+```
+docker-compose run --rm web bundle exec ruby ./ldap_example.rb
+```
