@@ -16,5 +16,5 @@ A demo of MCommunity LDAP in ruby
 3. Uncomment an appropriate line in `ldap_demo.rb`. For example, the line with `ldap_search(one_user("ststv"))` can be uncommented. 
 4. Run the script in the terminal
 ```
-docker-compose run --rm web bundle exec ruby ./ldap_example.rb
+docker-compose run --rm web bundle exec ruby ./ldap_demo.rb
 ```
